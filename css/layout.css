@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Noto+Sans+KR&display=swap');
+
+/* #scenary swiper1 */
+#scenery {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#scenery .banner_text {
+  position: absolute;
+  z-index: 5;
+  top: calc(50% - 7vh);
+  left: 37%;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  cursor: default;
+}
+
+#scenery .banner_text h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+}
+
+#scenery .banner_text p {
+  font-size: 1.5rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+#scenery .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#scenery .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+#scenery .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#scenery .swiper-button-next,
+#scenery .swiper-button-prev {
+  color: #fff;
+  opacity: 0.5;
+}
+
+#scenery .swiper-button-next:hover,
+#scenery .swiper-button-prev:hover {
+  opacity: 1;
+}
+
+#scenery .swiper-button-next {
+  right: 5%;
+}
+
+#scenery .swiper-button-prev {
+  left: 5%;
+}
+
+#scenery .swiper-pagination-bullet,
+#scenery .swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
+
+#scenery .swiper-pagination-bullet-active {
+  transition: 2s;
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 5px;
+}
+
+#scenery .swiper-button-next,
+#scenery .swiper-button-prev {
+  --swiper-navigation-size: 80px;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    border-radius: 5px;
+  }
+
+  100% {
+    width: 30px;
+    border-radius: 5px;
+  }
+}
+
+/* rooms swiper2 */
+#rooms {
+  width: 100%;
+  height: 100vh;
+}
+
+#rooms .rooms_title {
+  text-align: center;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#rooms .rooms_title h2 {
+  font-size: 4rem;
+}
+
+#rooms .rooms_title p {
+  color: #646464;
+  margin: 1rem 0 1rem 0;
+}
+
+#rooms .rooms_title a {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  font-size: 1rem;
+  line-height: 40px;
+  color: #27a6c9;
+}
+
+#rooms .rooms_title a:hover {
+  background: #e8f3f6;
+}
+
+#rooms .rooms_text h4 {font-size: 1.5rem;}
+
+#rooms .rooms_text p {
+  font-size: 1rem;
+  color: #646464;
+  margin: 0.75rem 0 1.5rem 0;
+}
+
+#rooms .rooms_text a {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  font-size: 1rem;
+  line-height: 40px;
+  color: #27a6c9;
+}
+
+#rooms .rooms_text a:hover {
+  background: #e8f3f6;
+}
+/* myswiper2 */
+#rooms .mySwiper2 {
+  width: 100%;
+  height: 60vh;
+}
+#rooms .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 70%;
+}
+
+#rooms .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#rooms .swiper-pagination{
+  bottom:0;
+}
+
+#rooms .swiper-button-next,
+#rooms .swiper-button-prev {
+  --swiper-navigation-size: 80px;
+}
